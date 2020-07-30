@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/juanzeng/main2.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/juanzeng/main2.js"></script>
+  <style>
+    .carousel-control-prev,.carousel-control-next{
+        width:4%;height: 20%;
+        background-color:#aaa;
+        border-radius: 0.25rem;
+        top:40%;
+    }
+    .carousel-indicators li{
+        width: 0.6rem;height:0.6rem;
+        background-color: #fff;
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+        border-radius: 50%;
+    }
+    .carousel-indicators .active{
+        background: #0aa1ed;
+    }
+  </style>
+</head>
+<body>
+  <div class="loginHead">
+    <div class="logoBar">
+      <div>
+        <div><img src="../../images/logo.jpg" alt=""></div>
+        <div>图书捐赠网站--一册书籍一份情！</div>
+        <div style="margin-right: 10px;width: 60px;font-size: 14px;">尊敬的<p id="yhm"></p>您好</div>
+      </div>
+    </div>
+  </div>
+  <div class="tabs_content">
+    <div class="tabs_header">
+        <ul>
+            <li class="li1" onclick="onclick1()">首页</li>
+            <li class="li2" onclick="onclick2()">西部详情</li>
+            <li class="li3" onclick="onclick3()">我要捐书</li>
+            <li class="li4" onclick="onclick4()">爱心公告板</li>
+            <li class="li5" onclick="onclick5()">常见问题</li>
+        </ul>
+    </div>
+    <div class="tabs_panel1">
+        <div class="tabs_panel_content">
+            <div class="tabs_panelItem1">
+                <div id="demo" class="carousel" data-ride="carousel">
+                    <!--1.轮播的图片-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img class="w-100" src="../../images/juanzeng/1.jpg" alt=""/></div>
+                        <div class="carousel-item"><img class="w-100" src="../../images/juanzeng/2.jpg" alt=""/></div>
+                        <div class="carousel-item"><img class="w-100" src="../../images/juanzeng/3.jpg" alt=""/></div>
+                        <div class="carousel-item"><img class="w-100" src="../../images/juanzeng/4.jpg" alt=""/></div>
+                    </div>
+                    <!--2.左右箭头-->
+                    <a data-slide="prev" href="#demo" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a data-slide="next" href="#demo" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <!--3.轮播指示器-->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item1">
+                        <img src="../../images/juanzeng/5.png" alt="">
+                        <div class="hidden-xs"><p>分享阅读，传递快乐。<br>我们需要您的持续支持！</p></div>
+                        <button><a style="color: #1da65d;" onclick="onclick3()">我要捐书</a></button>
+                    </div>
+                    <div class="item1">
+                        <img src="../../images/juanzeng/6.png" alt="">
+                        <div class="hidden-xs"><p>种下一粒种子，收获一片生机；<br>献出一片爱心，托起一份希望。</p></div>
+                        <button><a style="color: #1da65d;"onclick="onclick2()">西部详情</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs_panel2">
+        <div class="tabs_pane2_content">
+            <div class="tabs_panelItem2">
+                <div class="column-banner"></div>
+                <div class="crumbs">首页&gt;西部详情 <p></p></div>
+                <div style="width: 1140px;margin: auto;margin-top: 40px;margin-bottom: 40px;">
+                    <div class="editor">
+                        <p>西部温暖捐书，一本书圆一个梦。全民捐书行动，一切为了西部孩子明天的梦想。</p>
+                        <p style="text-align: center;"><img src="../../images/juanzeng/8.jpg" title="190114_164435_1018.jpg" alt="content-img-01.jpg"></p>
+                        <p>“一本16块钱的字典并不贵，如果只花9块钱就能买到更会让人感觉便宜。但是这样的价格却让西部的贫困孩子难以承受。”这是不久前央视报道的一条新闻。西部贫困地区孩子没有字典用的问题引发了社会各界的关注。“我们在看到央视记者报道的新闻以后，新闻出版总署引起高度重视，立即作出反应，我们柳斌杰署长亲自部署，采取多项措施来解决改变农村学生的字典问题，其中有一个举措就是专门发了一个文件。号召倡议我们新闻出版系统的所有企业都来献爱心，有的捐字典，有的捐款项。”近日，新闻出版总署副署长蒋建国在央视社会与法频道“两会”特别节目《我建议》中透露了这一信息。</p>
+                        <p>央视社会与法频道“两会”特别节目《我建议》关注了中西部孩子缺乏教科书的问题，并邀请了新闻出版总署副署长蒋建国作为嘉宾探讨来寻求这一问题的解决方案。节目中孩子的一句“破了伤人心”的话引起了蒋建国副署长对于自己童年的回忆。“我读中小学的时候，是文化大革命期间，市场上没有新华字典可卖。整个全班同学也只有一本字典，而且是我老师的。我是收集了各种各样的纸，有的是废纸，为了学习的需要，我把这本新华字典抄了一遍。”蒋建国副署长说，正是这个类似的经历让他非常理解这些孩子们，据蒋署长介绍，新闻出版总署已经专门发文,号召倡议新闻出版系统所有企业献爱心，捐字典、捐款。</p>
+                        <p>希望将您手中闲置的图书捐赠出来，让您家中闲置的图书“走”起来，与我们一起，种下一粒种子，收获一片生机；献出一片爱心，托起一份希望。让爱心图书，携带着知识的火种，滋润这一方土地，让爱的暖流永远传递！</p>
+                        <p style="text-align: center;"><img src="../../images/juanzeng/11.jpg" title="190113_201709_1148.jpg" alt="content-img-02.jpg"></p><p><br></p>            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs_panel3">
+        <div class="tabs_pane3_content">
+            <div class="tabs_panelItem3">
+                <div class="column-banner"></div>
+                <div>
+                    <div class="crumbs">首页&gt;我要捐书 <p></p></div>
+                    <div class="crumbs2">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#tab1">邮寄方式</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#tab2">集体捐书</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#tab3">捐款买书</a></li>
+                        </ul>
+                        <!--内容部分-->
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane active">
+                                <h3>个人邮寄方式登记</h3>
+                                <form action="">
+                                    <div class="row" style="margin-top: 30px;">
+                                        <div class="col-7">
+                                            <div class="row">
+                                                <label class="col-4">姓名:</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationmailing-username" class="form-control" name="DonationMailing[username]" placeholder="请填写您的真实姓名" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">联系方式:</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationmailing-phone" class="form-control" name="DonationMailing[username]" placeholder="请填写您的联系方式" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">是否需要邀请函:</label>
+                                                <div class="col-8">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="DonationMailing[is_thanks]" id="inlineRadio2" value="NO" checked=""> 否
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="DonationMailing[is_thanks]" id="inlineRadio1" value="YES"> 是
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="mailing-info">
+                                                <p><strong>邮寄地址：</strong><span>安徽省淮南市淮南师范学院</span></p>
+                                                <p><strong>邮编：</strong>
+                                                    <sapn>100021</sapn>
+                                                </p>
+                                                <p><strong>电话：</strong><span>18855488960</span></p>
+                                                <p><strong>时间：</strong><span>周一到周五</span><span>9:00~11:30</span><span>13:30~17:00</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="donation-form-submit">
+                                        <button onclick="aa1()"type="button" id="btn-mailing" class="btn">提交
+                                        </button>                            
+                                    </div>
+                                </form>
+                                <div class="donation-form-notes">
+                                    <h5>注意事项：</h5>
+                                    <ol>
+                                        <li>个人邮寄，邮费需自理；</li>
+                                        <li>如需要感谢函，您可以打印您的登记信息，或将登记信息手写并夹入书中，我们会根据您填写的地址寄出感谢函。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane">
+                                <h3>集体捐赠方式登记</h3>
+                                <form action="">
+                                    <div class="row" style="margin-top: 30px;">
+                                        <div class="col-7">
+                                            <div class="row">
+                                                <label class="col-4">公司名称:</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationcollective-company2" class="form-control" name="DonationCollective[company]" placeholder="请填写您的公司名称" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">单位地址:</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationcollective-address2" class="form-control" name="DonationCollective[address]" placeholder="请填写您的单位地址" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">联系人</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationcollective-contact2" class="form-control" name="DonationCollective[contact]" placeholder="请填写您的姓名" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">联系方式</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationcollective-phone2" class="form-control" name="DonationCollective[phone]" placeholder="推荐填写手机号码" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">预估捐赠册数</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationcollective-number" class="form-control" name="DonationCollective[number]" placeholder="1" aria-required="true">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="donation-form-submit">
+                                        <button onclick="aa2()"type="button" id="btn-mailing2" class="btn">提交
+                                        </button>                            
+                                    </div>
+                                </form>
+                                <div class="donation-form-notes">
+                                    <h5>说明</h5>
+                                    <ol>
+                                        <li>1：单位捐赠，需要书籍数量在2000册及以上；</li>
+                                        <li>2：请您填写左侧信息，我们收到表单后，会及时与您取得联系，并安排物流上门收取图书。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div id="tab3" class="tab-pane">
+                                <h3>个现金捐款登记</h3>
+                                <form action="">
+                                    <div class="row" style="margin-top: 30px;">
+                                        <div class="col-7">
+                                            <div class="row">
+                                                <label class="col-4">姓名:</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationbuying-username3" class="form-control" name="DonationBuying[username]" placeholder="请填写您的姓名" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">联系方式</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationbuying-phone3" class="form-control" name="DonationBuying[phone]" placeholder="推荐填写手机号码" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top: 30px;">
+                                                <label class="col-4">预计捐款金额</label>
+                                                <div class="col-8">
+                                                    <input type="text" id="donationbuying-donation_money" class="form-control" name="DonationBuying[donation_money]" placeholder="请填写您准备捐赠的金额" aria-required="true">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="donation-form-submit">
+                                        <button onclick="aa3()"type="button" id="btn-mailing3" class="btn">提交
+                                        </button>                            
+                                    </div>
+                                </form>
+                                <div class="donation-form-notes">
+                                    <h5>联系方式</h5>
+                                    <ol>
+                                        <li>1：电话：（010）18855488960 (周一至周五 9:00-11:30 13:30-17:00）；</li>
+                                        <li>2：地址：安徽省淮南市淮南师范学院泉山校区 </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs_panel4">
+        <div class="tabs_pane4_content">
+            <div class="tabs_panelItem4">
+                <div class="column-banner"></div>
+                <div class="crumbs">首页&gt;爱心公告板 <p></p></div>
+                <div class="board-info">
+                    <h3>2014年-2019年援建爱心图书室(29)</h3>
+                    <table>
+                        <tr>
+                            <th style="width: 10%; margin-left: 20%;">序号</th>
+                            <th style="width: 20%;">援建日期</th>
+                            <th style="width: 30%;">单位</th>
+                            <th style="width: 20%;">册次</th>
+                            <th style="width: 20%;">码洋</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2019年10月10日</td>
+                            <td>李甜甜</td>
+                            <td>3</td>
+                            <td>68.0元</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2019年07月29日</td>
+                            <td>曹蓉蓉</td>
+                            <td>12</td>
+                            <td>159.6元</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2019年6月10日</td>
+                            <td>孙高峰</td>
+                            <td>22</td>
+                            <td>387.3元</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2019年6月2日</td>
+                            <td>程雪</td>
+                            <td>13</td>
+                            <td>1544.4元</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2019年5月20日</td>
+                            <td>陈诚</td>
+                            <td>62</td>
+                            <td>1546.5元</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>2019年5月10日</td>
+                            <td>崔静静</td>
+                            <td>22</td>
+                            <td>287.0元</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>2019年5月2日</td>
+                            <td>胡丽萍</td>
+                            <td>24</td>
+                            <td>322.3元</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>2019年4月24日</td>
+                            <td>附件</td>
+                            <td>23</td>
+                            <td>345.4元</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>2019年4月24日</td>
+                            <td>董秀霞</td>
+                            <td>25</td>
+                            <td>367.0元</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>2019年4月20日</td>
+                            <td>李芳芳</td>
+                            <td>6</td>
+                            <td>59.9元</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>2019年4月19日</td>
+                            <td>李金龙</td>
+                            <td>13</td>
+                            <td>159.6元</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>2019年4月18日</td>
+                            <td>李一凡</td>
+                            <td>15</td>
+                            <td>187.0元</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>2019年4月17日</td>
+                            <td>李淼</td>
+                            <td>44</td>
+                            <td>870.0元</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>2019年4月4日</td>
+                            <td>佘舒雅</td>
+                            <td>9</td>
+                            <td>133.3元</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>2019年4月3日</td>
+                            <td>吕雪晶</td>
+                            <td>22</td>
+                            <td>333.6元</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>2019年4月2日</td>
+                            <td>梁广</td>
+                            <td>33</td>
+                            <td>444.4元</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>2019年4月1日</td>
+                            <td>罗宇航</td>
+                            <td>3</td>
+                            <td>57.5元</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>2019年3月29日</td>
+                            <td>王梦晴</td>
+                            <td>14</td>
+                            <td>344.4元</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>2019年3月28日</td>
+                            <td>许抗</td>
+                            <td>46</td>
+                            <td>999.6元</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>2019年3月27日</td>
+                            <td>于艳宁</td>
+                            <td>8</td>
+                            <td>157.7元</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>2019年3月25日</td>
+                            <td>张炫</td>
+                            <td>100</td>
+                            <td>2593.3元</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>2019年3月24日</td>
+                            <td>孙冬玲</td>
+                            <td>14</td>
+                            <td>255.5元</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>2019年3月22日</td>
+                            <td>李慧慧</td>
+                            <td>22</td>
+                            <td>387.3元</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>2019年3月20日</td>
+                            <td>罗元旦</td>
+                            <td>11</td>
+                            <td>153.3元</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>2019年3月11日</td>
+                            <td>张莉莉</td>
+                            <td>33</td>
+                            <td>666.6元</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>2019年3月10日</td>
+                            <td>徐子怡</td>
+                            <td>14</td>
+                            <td>199.9元</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>2019年3月8日</td>
+                            <td>谢无双</td>
+                            <td>15</td>
+                            <td>177.7元</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>2019年3月7日</td>
+                            <td>华仔</td>
+                            <td>12</td>
+                            <td>188.8元</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs_panel5">
+        <div class="tabs_pane5_content">
+            <div class="tabs_panelItem5">
+                <div class="column-banner"></div>
+                <div class="crumbs">首页&gt;常见问题 <p></p></div>
+                <div class="panel5-group" style="width: 1140px;margin: auto;margin-top: 40px;margin-bottom: 40px;">
+                    <div id="parent">
+                        <!--选项1-->
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card1">1、请问期刊或者教材可以捐赠吗？</a>
+                            </div>
+                            <div id="card1" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：可以。但是由于各地区使用的教材不太一样，所以希望您捐赠更适合阅读的图书。
+                                </div>
+                            </div>
+                        </div>
+                        <!--选项2-->
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card2">2、请问非正式出版物是否可以捐赠？</a>
+                            </div>
+                            <div id="card2" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：非正式出版物，只接受具有较高学术及收藏价值的图书。如地方文献、地方志、族谱、私人收藏的古籍、善本或有收藏价值的手稿等。
+                                </div>
+                            </div>
+                        </div>
+                        <!--选项3-->
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card3">3、请问捐赠的图书还能要回吗？</a>
+                            </div>
+                            <div id="card3" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：对不起，不可以。受赠图书一经接收，首图将拥有对该图书的多有权和处理权。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card4">4、请问同种图书有没有捐赠限制？ </a>
+                            </div>
+                            <div id="card4" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：有捐赠限制，同种图书最多接收捐赠20本。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card5">5、请问我们捐赠的图书是否捐赠到西部？ </a>
+                            </div>
+                            <div id="card5" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：是的，西部的孩子因为你的无私奉献而享受着读书的乐趣。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card6">4、请问同种图书有没有捐赠限制？ </a>
+                            </div>
+                            <div id="card6" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：有捐赠限制，同种图书最多接收捐赠20本。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card7">6、有捐赠表彰吗？ </a>
+                            </div>
+                            <div id="card7" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：如果您需要，我们可以给您寄感谢函。
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card8">7、请问同种图书有没有捐赠限制？ </a>
+                            </div>
+                            <div id="card8" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：有捐赠限制，同种图书最多接收捐赠20本。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a data-toggle="collapse" href="#card9">8、请问同种图书有没有捐赠限制？ </a>
+                            </div>
+                            <div id="card9" class="collapse" data-parent="#parent">
+                                <div class="card-body">
+                                    答：有捐赠限制，同种图书最多接收捐赠20本。
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

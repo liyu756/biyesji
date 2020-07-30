@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <script src="js/index.js"></script> -->
+</head>
+<body id="zhezhao2">
+  <!-- Site header -->
+  <div id="zhezhao">
+  <header>
+    <div class="header-collapse" style="display: flex;">
+      <div id="qufeng" style="color: #fff;width:200px;padding-top: 16px;margin-left: 10px;opacity: 0;">22</div>
+      <div class="header-collapse-inner">
+        <nav class="site-nav">
+          <ul id="navigation">
+            <li>
+              <a href="#home" onclick="dian1()">首页</a>
+            </li>
+            <li>
+              <a href="#subscribe" onclick="dian2()">登录</a>
+            </li>
+            <li>
+              <a href="#sign" onclick="dian6()">注册</a>
+            </li>
+            <li>
+              <a href="#about" onclick="dian3()">关于我们</a>
+            </li>
+            <li>
+              <a href="#services" onclick="dian4()">服务</a>
+            </li>
+            <li>
+              <a href="#contact" onclick="dian5()">联系我们</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="home">
+        <section class="fullscreen">
+          <div class="container1">
+            <div>
+              <div>
+                <h1>送暖图书捐赠网站官网</h1>
+                <p>一册书籍一份情，一缕书香一片心！你们所捐献的每一册书籍也会使这份情缘得以延续！</p>
+                <a id="juanzeng">捐赠图书</a>
+                <a id="goumai">购买图书</a>
+                <!-- <div class="container1_button">
+                <button id="juanzeng" style="background-color: #fff;color:#000" target="_blank">捐赠图书</button>
+                <button id="goumai" target="_blank">购买图书</button>
+                href="main/juanzeng/main2.html"
+                href="main/goumai/main.html"
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="subscribe">
+        <section class="fullscreen">
+          <div class="container2">
+            <div>
+              <div class="loginInputWrap">
+                <div class="inputItem">
+                    <div class="labInpWr">
+                        <div class="label">
+                            <span>用户名：</span>
+                        </div>
+                        <div class="inputWrap">
+                            <span class="inputPad">
+                                <input type="text" class="inputBlock" value="" autocomplete="off" id="userName" placeholder="用户名/邮箱/已验证手机">
+                            </span>
+                            <span class="clearInput" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputItem">
+                    <div class="labInpWr">
+                        <div class="label">
+                            <span>密码：</span>
+                        </div>
+                        <div class="inputWrap">
+                            <span class="inputPad">
+                                <input type="password" class="inputBlock" id="userPas" autocomplete="off" placeholder="密码">
+                            </span>
+                            <span class="clearInput" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="loginBtn" id="loginBtn">
+                    <a>登录</a>
+                </div>
+                <!-- <div class="otherLink">
+                    <a target="_blank" class="fogotPas">忘记密码？</a>
+                    <a href="#sign" class="newUserReg">新用户注册&gt;&gt;</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="sign">
+        <section class="fullscreen">
+          <div class="container6">
+            <div>
+              <div class="loginInputWrap">
+                <div class="inputItem">
+                    <div class="labInpWr">
+                        <div class="label">
+                            <span>用户名：</span>
+                        </div>
+                        <div class="inputWrap">
+                            <span class="inputPad">
+                                <input type="text" class="inputBlock" value="" autocomplete="off" id="uName" placeholder="用户名/邮箱/已验证手机">
+                            </span>
+                            <span class="clearInput" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputItem">
+                    <div class="labInpWr">
+                        <div class="label">
+                            <span>密码：</span>
+                        </div>
+                        <div class="inputWrap">
+                            <span class="inputPad">
+                                <input type="password" class="inputBlock" id="uPas" autocomplete="off" placeholder="密码">
+                            </span>
+                            <span class="clearInput" style="display: none;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputItem">
+                  <div class="labInpWr">
+                      <div class="label">
+                          <span>确认密码：</span>
+                      </div>
+                      <div class="inputWrap">
+                          <span class="inputPad">
+                              <input type="password" class="inputBlock" id="checkuserPas" autocomplete="off" placeholder="确认密码" onblur="check()">
+                          </span>
+                          <span class="clearInput" style="display: none;color: white;">两次密码输入不一致</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="loginBtn2" id="loginBtn2">
+                <a>注册</a>
+              </div>
+            <!-- <div class="otherLink">
+              <a href="login.html" target="_blank" class="newUserReg" style="width: 380px;text-align: center;">已有账号？请登录</a>
+            </div> -->
+            </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="about">
+        <section class="fullscreen">
+          <div class="container3">
+            <div>
+              <h2>关于我们</h2>
+              <div>
+                <p>送暖图书捐赠网站是一个开放式的集公益捐书、购买图书、引导阅读、分享反馈等功能的网络平台，在这个平台上我们为捐赠者、企业和受助者建立起沟通的桥梁。帮助他们更便捷、更简单的完成公益图书捐赠和管理。 
+                </p>
+                <p>这是一个公开透明、集中资源、线上线下、公民参与的公益创新模式。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="services">
+        <section class="fullscreen">
+          <div class="container4">
+            <div>
+              <div class="frow1">
+                <h2 style="color: white;">服务</h2>
+                <p  style="color: white;">我们将构建一个可持续发展的公益捐书生态链。 
+                  即：——公民捐赠图书——引导孩子阅读——反馈分享——公开透明 
+              </div>
+              <div class="frow2">
+								<div  class="frow21">
+									<div>
+										<h3 style="color: white;">准时上门收书</h3>
+										<p style="color: white;">只要你在网上填报信息，我们将很快上门收书，让更多的孩子可以更快的收到自己想要的书籍</p>
+									</div>
+								</div>
+
+								<div class="frow22">
+									<div>
+										<h3 style="color: white;">我的宗旨</h3>
+										<p style="color: white;">在我国很多地区，特别是中西部欠发达地区，教育发展水平普遍较低，当地的农村教育更是非常薄弱，更没有足够的资金来配备添置和更新图书，优秀课外读物更是少之又少。很多学校根本没有自己的图书室，师生就缺乏便利的借阅条件。因此捐书公益活动，等你参加!</p>
+									</div>
+								</div>
+
+								<div class="frow23">
+									<div>
+										<h3 style="color: white;">公开透明</h3>
+										<p style="color: white;">在本网站购买图书所获得的收益都将用于为贫困山区孩子购买图书。且在网上公开我们的财务明细，做到公开透明。</p>
+									</div>
+								</div>
+
+							</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="site-content-inner">
+      <div class="site-part" id="contact">
+        <section class="fullscreen">
+          <div class="container5">
+            <div>
+              <h2 style="color: white;">联系我们</h2>
+							<p style="color: white;">如果您对本网站有什么建议<br>请及时与我们联系 </p>
+              <div>
+                <div>
+                  <input type="text" id="cf-name" name="cf-name" placeholder="您的名字">
+                  <input type="email" id="cf-email" name="cf-email" placeholder="您的电子邮箱">
+                </div>
+                <input type="text" id="cf-subject" name="cf-subject" placeholder="意见主题">
+                <textarea name="cf-message" id="cf-message" placeholder="意见详细内容" rows="7"></textarea>
+                <button type="submit" id="cf-submit" name="cf-submit">发送意见</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

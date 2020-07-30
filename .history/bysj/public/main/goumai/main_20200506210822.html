@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/goumai/main.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/goumai/main.js"></script>
+  <style>
+    .carousel-control-prev,.carousel-control-next{
+        width:4%;height: 20%;
+        background-color:#aaa;
+        border-radius: 0.25rem;
+        top:40%;
+    }
+    .carousel-indicators li{
+        width: 0.6rem;height:0.6rem;
+        background-color: #fff;
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+        border-radius: 50%;
+    }
+    .carousel-indicators .active{
+        background: #0aa1ed;
+    }
+  </style>
+</head>
+<body>
+  <div id="map">
+    <div class="header">
+      <div class="site-topbar">
+        <!-- <a href="../../login.html">登陆</a>
+        <a href="../../sign.html">注册</a> -->
+        <a href="../goumai/shopping.html">
+          <span class="glyphicon glyphicon glyphicon-shopping-cart"></span>
+          购物车</a>
+      </div>
+      <div class="site-header">
+        <div class="header-logo">
+          <img src="../../images/logo.jpg" alt="">
+        </div>
+        <!-- <div class="header-nav navbar navbar-expand-md">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">特价书</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">小说</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">经管</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">文学</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">社科</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">科技</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">原版</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">推荐</a></li>
+            <li class="nav-item"><a class="nav-link" href="" onmouseover="xuanfu1()">特色</a></li>
+          </ul>
+        </div> -->
+        <div class="header-search">
+          <div id="search-form"></div>
+		<div id="message"></div>
+          <div><img src="../../images/goumai/search.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="site-header-content" onmouseleave="xuanfu2()">
+        <div>
+          <img src="../../images/goumai/1.webp" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+        <div>
+          <img src="../../images/goumai/2.webp" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+        <div>
+          <img src="../../images/goumai/3.webp" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+        <div>
+          <img src="../../images/goumai/4.webp" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+        <div>
+          <img src="../../images/goumai/5.png" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+        <div>
+          <img src="../../images/goumai/6.webp" alt="">
+          <p>小米10 Pro</p>
+          <p>4999元起</p>
+        </div>
+    </div> -->
+    <div class="container1">
+      <!-- <div class="site-category-list">
+        <ul>
+          <li>文学 <span>青春文学</span><span>></span></li>
+          <li>社科 <span>历史</span><span>></span></li>
+          <li>少儿 <span>儿童文学</span><span>></span></li>
+          <li>艺术 <span>绘画</span><span>></span></li>
+          <li>生活 <span>美食</span><span>></span></li>
+          <li>文学 <span>中小学辅导</span><span>></span></li>
+          <li>哲学 <span>自然科普</span><span>></span></li>
+        </ul>
+      </div> -->
+      <div class="site-lunb">
+        <div id="demo" class="carousel" data-ride="carousel">
+          <!--1.轮播的图片-->
+          <div class="carousel-inner">
+              <div class="carousel-item active"><img class="w-100" src="../../images/goumai/7.jpg" alt=""/></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/goumai/8.jpg" alt=""/></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/goumai/9.jpg" alt=""/></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/goumai/10.jpg" alt=""/></div>
+              <div class="carousel-item"><img class="w-100" src="../../images/goumai/11.jpg" alt=""/></div>
+          </div>
+          <!--2.左右箭头-->
+          <a data-slide="prev" href="#demo" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a data-slide="next" href="#demo" class="carousel-control-next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+          <!--3.轮播指示器-->
+          <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+          </ul>
+      </div>
+      </div>
+    </div>
+    <div class="container2">
+      <img src="../../images/goumai/12.jpg" alt="">&nbsp;
+      <img src="../../images/goumai/13.jpg" alt="">&nbsp;
+      <img src="../../images/goumai/14.jpg" alt="">
+    </div>
+    <div class="container3">
+      <div class="page-main">
+        <div class="box-hd">
+          <h2 class="title">图书闪购</h2>
+        </div>
+        <div class="box-bd">
+          <div>
+            <div id="jump1" onclick="jump1()">
+              <img style="width: 100%;" src="../../images/goumai/15.jpg" alt="">
+              <img src="../../images/goumai/15.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《孔子智慧101》</h3>
+              <p class="desc">商务印书馆出品</p>
+              <p class="price"><span style="color: #ff6700;">24</span>元
+                <del>72元</del></p>
+            </div>
+            <div id="jump2" onclick="jump2()">
+              <img style="width: 100%;" src="../../images/goumai/16.jpg" alt="">
+              <img src="../../images/goumai/16.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《探寻中国的现代性》</h3>
+              <p class="desc">清华大学教授汪晖出版</p>
+              <p class="price"><span style="color: #ff6700;">29</span>元
+                <del>110元</del></p>
+            </div>
+            <div id="jump3" onclick="jump3()">
+              <img style="width: 100%;" src="../../images/goumai/17.jpg" alt="">
+              <img src="../../images/goumai/17.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《时尚文化的启蒙时代》</h3>
+              <p class="desc">18世纪宫廷女装文化</p>
+              <p class="price"><span style="color: #ff6700;">29</span>元
+                <del>98元</del></p>
+            </div>
+            <div id="jump4" onclick="jump4()">
+              <img style="width: 100%;" src="../../images/goumai/18.jpg" alt="">
+              <img src="../../images/goumai/18.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《中国历代谜案》</h3>
+              <p class="desc">对我国历史上有重大影响的近20件历史事件</p>
+              <p class="price"><span style="color: #ff6700;">17.9</span>元
+                <del>60元</del></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-main">
+        <div class="box-hd">
+          <h2 class="title">包邮专区</h2>
+        </div>
+        <div class="box-bd">
+          <div>
+            <div id="jump5" onclick="jump5()">
+              <img style="width: 100%;" src="../../images/goumai/15(2).jpg" alt="">
+              <img src="../../images/goumai/15(2).1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《丽斯贝特 合计》</h3>
+              <p class="desc">12开铜版纸全彩</p>
+              <p class="price"><span style="color: #ff6700;">39.9</span>元
+                <del>146元</del></p>
+            </div>
+            <div id="jump6" onclick="jump6()">
+              <img style="width: 100%;" src="../../images/goumai/16(2).jpg" alt="">
+              <img src="../../images/goumai/16(2).1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《小熊战士》</h3>
+              <p class="desc">浙江少儿儿童出版社</p>
+              <p class="price"><span style="color: #ff6700;">19.9</span>元
+                <del>68元</del></p>
+            </div>
+            <div id="jump7" onclick="jump7()">
+              <img style="width: 100%;" src="../../images/goumai/17(2).jpg" alt="">
+              <img src="../../images/goumai/17.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《超有味》</h3>
+              <p class="desc">心理学、经济学、博弈论定律</p>
+              <p class="price"><span style="color: #ff6700;">26</span>元
+                <del>90元</del></p>
+            </div>
+            <div id="jump8" onclick="jump8()">
+              <img style="width: 100%;" src="../../images/goumai/18(2).jpg" alt="">
+              <img src="../../images/goumai/18.1.jpg" style="height: 200px;display: none;" alt="">
+              <h3 class="title">《胡风全集补遗》</h3>
+              <p class="desc">张晓风编著</p>
+              <p class="price"><span style="color: #ff6700;">39</span>元
+                <del>88元</del></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-brick-box">
+        <div class="box-hd">
+          <h2 class="title">文学图书</h2>
+        </div>
+        <div class="box-bd2">
+          <div class="box-left">
+            <div class="box-left-img">
+              <img src="../../images/goumai/19.jpg" alt="">
+            </div>
+            <div class="box-left-text">
+              <h3>悬疑推理排行榜</h3>
+              <p>第七子/死亡之神</p>
+              <p>百年神秘经典</p>
+              <p>蘑菇七种</p>
+              <p>午夜文库097--双轮马车的秘密</p>
+              <p>午夜文库233－色情电影谋杀案</p>
+            </div>
+          </div>
+          <div class="box-right">
+            <div>
+              <div  id="jump9" onclick="jump9()">
+                <img src="../../images/goumai/20.jpg" alt="">
+                <img src="../../images/goumai/20.1.jpg" style="display: none;" alt="">
+                <p>你的世界让你拥有</p>
+                <p>微酸袅袅 著</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump10" onclick="jump10()">
+                <img src="../../images/goumai/21.jpg" alt="">
+                <img src="../../images/goumai/21.1.jpg" style="display: none;" alt="">
+                <p>我来过你爱过的世界</p>
+                <p>夏风颜 著</p>
+                <p class="price"><span style="color: #ff6700;">17.1</span>元
+                  <del>45.0元</del></p>
+              </div>
+              <div id="jump11" onclick="jump11()">
+                <img src="../../images/goumai/22.jpg" alt="">
+                <img src="../../images/goumai/22.1.jpg" style="display: none;" alt="">
+                <p>小井想要一部时光机</p>
+                <p>井柏然</p>
+                <p class="price"><span style="color: #ff6700;">15.4</span>元
+                  <del>48.0元</del></p>
+              </div>
+              <div id="jump12" onclick="jump12()">
+                <img src="../../images/goumai/23.jpg" alt="">
+                <img src="../../images/goumai/23.1.jpg" style="display: none;" alt="">
+                <p>我不是怪兽：小说集</p>
+                <p>朱肖影 著</p>
+                <p class="price"><span style="color: #ff6700;">12.5</span>元
+                  <del>39.0元</del></p>
+              </div>
+            </div>
+            <div>
+              <div id="jump13" onclick="jump13()">
+                <img src="../../images/goumai/24.jpg" alt="">
+                <img src="../../images/goumai/24.1.jpg" style="display: none;" alt="">
+                <p>少数派报告</p>
+                <p>郭敬明 著</p>
+                <p class="price"><span style="color: #ff6700;">12.7</span>元
+                  <del>39.9元</del></p>
+              </div>
+              <div id="jump14" onclick="jump14()">
+                <img src="../../images/goumai/25.jpg" alt="">
+                <img src="../../images/goumai/25.1.jpg" style="display: none;" alt="">
+                <p>深闺记事</p>
+                <p>源水漾 著</p>
+                <p class="price"><span style="color: #ff6700;">24.4</span>元
+                  <del>49.8元</del></p>
+              </div>
+              <div id="jump15" onclick="jump15()">
+                <img src="../../images/goumai/26.jpg" alt="">
+                <img src="../../images/goumai/26.1.jpg" style="display: none;" alt="">
+                <p>上帝想看电影</p>
+                <p>徐李佳 著</p>
+                <p class="price"><span style="color: #ff6700;">9.9</span>元
+                  <del>28.0元</del></p>
+              </div>
+              <div id="jump16" onclick="jump16()">
+                <img src="../../images/goumai/27.jpg" alt="">
+                <img src="../../images/goumai/27.1.jpg" style="display: none;" alt="">
+                <p>妾心如孽</p>
+                <p>姵璃</p>
+                <p class="price"><span style="color: #ff6700;">19.3</span>元
+                  <del>55.0元</del></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-brick-box">
+        <div class="box-hd">
+          <h2 class="title">社科图书</h2>
+        </div>
+        <div class="box-bd2">
+          <div class="box-left">
+            <div class="box-left-img">
+              <img src="../../images/goumai/28.jpg" alt="">
+            </div>
+            <div class="box-left-text">
+              <h3>政治军事畅销榜</h3>
+              <p>民主理论导论</p>
+              <p>中国海军长江抗战纪实</p>
+              <p>为自由而战-南非国付曼德拉</p>
+              <p>无可奈何花落去</p>
+              <p>美国大国的崛起</p>
+            </div>
+          </div>
+          <div class="box-right">
+            <div>
+              <div id="jump17" onclick="jump17()">
+                <img src="../../images/goumai/29.jpg" alt="">
+                <img src="../../images/goumai/29.1.jpg" style="display: none;" alt="">
+                <p>中国东北与近代大国关系</p>
+                <p>夏庆宇</p>
+                <p class="price"><span style="color: #ff6700;">14.8</span>元
+                  <del>39.0元</del></p>
+              </div>
+              <div id="jump18" onclick="jump18()">
+                <img src="../../images/goumai/30.jpg" alt="">
+                <img src="../../images/goumai/30.1.jpg" style="display: none;" alt="">
+                <p>马基雅维利-插图本</p>
+                <p>[美]帕特里克·克里 著,</p>
+                <p class="price"><span style="color: #ff6700;">9.9</span>元
+                  <del>30.0元</del></p>
+              </div>
+              <div id="jump19" onclick="jump19()">
+                <img src="../../images/goumai/31.jpg" alt="">
+                <img src="../../images/goumai/31.1.jpg" style="display: none;" alt="">
+                <p>甲午战争的千条细节</p>
+                <p>蒋丰 著</p>
+                <p class="price"><span style="color: #ff6700;">21.8</span>元
+                  <del>42.0元</del></p>
+              </div>
+              <div id="jump20" onclick="jump20()">
+                <img src="../../images/goumai/32.jpg" alt="">
+                <img src="../../images/goumai/32.1.jpg" style="display: none;" alt="">
+                <p>审判雅典-西方思想中的反</p>
+                <p>[美]珍妮弗·托尔伯特·罗</p>
+                <p class="price"><span style="color: #ff6700;">26.5</span>元
+                  <del>55.0元</del></p>
+              </div>
+            </div>
+            <div>
+              <div id="jump21" onclick="jump21()">
+                <img src="../../images/goumai/33.jpg" alt="">
+                <img src="../../images/goumai/33.1.jpg" style="display: none;" alt="">
+                <p>孙中山人生箴言</p>
+                <p>张金超　著</p>
+                <p class="price"><span style="color: #ff6700;">9.5</span>元
+                  <del>22.0元</del></p>
+              </div>
+              <div id="jump22" onclick="jump22()">
+                <img src="../../images/goumai/34.jpg" alt="">
+                <img src="../../images/goumai/34.1.jpg" style="display: none;" alt="">
+                <p>孙子兵法-中华经典指掌文</p>
+                <p>陈曦</p>
+                <p class="price"><span style="color: #ff6700;">9.6</span>元
+                  <del>16.0元</del></p>
+              </div>
+              <div id="jump23" onclick="jump23()">
+                <img src="../../images/goumai/35.jpg" alt="">
+                <img src="../../images/goumai/35.1.jpg" style="display: none;" alt="">
+                <p>美国粪-城市的耻辱</p>
+                <p>斯蒂芬斯</p>
+                <p class="price"><span style="color: #ff6700;">10.0</span>元
+                  <del>19.8元</del></p>
+              </div>
+              <div id="jump24" onclick="jump24()">
+                <img src="../../images/goumai/36.jpg" alt="">
+                <img src="../../images/goumai/36.1.jpg" style="display: none;" alt="">
+                <p>中国红十字会初期发展之研</p>
+                <p>张建俅　著</p>
+                <p class="price"><span style="color: #ff6700;">15.4</span>元
+                  <del>22.0元</del></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-brick-box">
+        <div class="box-hd">
+          <h2 class="title">少儿图书</h2>
+        </div>
+        <div class="box-bd2">
+          <div class="box-left">
+            <div class="box-left-img">
+              <img src="../../images/goumai/37.png" alt="">
+            </div>
+            <div class="box-left-text">
+              <h3>益智启蒙畅销榜</h3>
+              <p>小熊维尼谈哲学</p>
+              <p>鸟:全世界130种鸟的彩色图鉴-</p>
+              <p>彩书坊珍藏版---地球奥秘大百科</p>
+              <p>我的第一本专注力训练书-小观</p>
+              <p>啊哈！</p>
+            </div>
+          </div>
+          <div class="box-right">
+            <div>
+              <div id="jump25" onclick="jump25()">
+                <img src="../../images/goumai/38.jpg" alt="">
+                <img src="../../images/goumai/38.1.jpg" style="display: none;" alt="">
+                <p>鲨鱼-小牛顿趣味动物馆</p>
+                <p>贝热龙</p>
+                <p class="price"><span style="color: #ff6700;">10.4</span>元
+                  <del>15.0元</del></p>
+              </div>
+              <div id="jump26" onclick="jump26()">
+                <img src="../../images/goumai/39.jpg" alt="">
+                <img src="../../images/goumai/39.1.jpg" style="display: none;" alt="">
+                <p>玩出好智力 汽车贴纸嘉年</p>
+                <p>思维思教育机构　编</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump27" onclick="jump27()">
+                <img src="../../images/goumai/40.jpg" alt="">
+                <img src="../../images/goumai/40.1.jpg" style="display: none;" alt="">
+                <p>《创意折纸大全》(彩图详</p>
+                <p>肖玲玲</p>
+                <p class="price"><span style="color: #ff6700;">46.8</span>元
+                  <del>180.0元</del></p>
+              </div>
+              <div id="jump28" onclick="jump28()">
+                <img src="../../images/goumai/41.jpg" alt="">
+                <img src="../../images/goumai/41.1.jpg" style="display: none;" alt="">
+                <p>资深教育专家重磅推荐:成</p>
+                <p>王志兵</p>
+                <p class="price"><span style="color: #ff6700;">49.9</span>元
+                  <del>192.0元</del></p>
+              </div>
+            </div>
+            <div>
+              <div id="jump29" onclick="jump29()">
+                <img src="../../images/goumai/42.jpg" alt="">
+                <img src="../../images/goumai/42.1.jpg" style="display: none;" alt="">
+                <p>与最合适的绘本相遇</p>
+                <p>曲奇　著</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump30" onclick="jump30()">
+                <img src="../../images/goumai/43.jpg" alt="">
+                <img src="../../images/goumai/43.1.jpg" style="display: none;" alt="">
+                <p>彩书坊-读故事学汉字(轻</p>
+                <p>陈广涛</p>
+                <p class="price"><span style="color: #ff6700;">28.2</span>元
+                  <del>88.0元</del></p>
+              </div>
+              <div id="jump31" onclick="jump31()">
+                <img src="../../images/goumai/44.jpg" alt="">
+                <img src="../../images/goumai/44.1.jpg" style="display: none;" alt="">
+                <p>没头脑和不高兴(注音版)/</p>
+                <p>任溶溶</p>
+                <p class="price"><span style="color: #ff6700;">15.3</span>元
+                  <del>18.0元</del></p>
+              </div>
+              <div id="jump32" onclick="jump32()">
+                <img src="../../images/goumai/45.jpg" alt="">
+                <img src="../../images/goumai/45.1.jpg" style="display: none;" alt="">
+                <p>忆旧歌-小白菜 地里黄-家</p>
+                <p>金波 编</p>
+                <p class="price"><span style="color: #ff6700;">9.7</span>元
+                  <del>20.0元</del></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-brick-box">
+        <div class="box-hd">
+          <h2 class="title">热卖图书</h2>
+        </div>
+        <div class="box-bd2">
+          <div class="box-left">
+            <div class="box-left-img">
+              <img src="../../images/goumai/46.jpg" alt="">
+            </div>
+            <div class="box-left-text">
+              <h3>生活励志排行榜</h3>
+              <p>活着</p>
+              <p>加油</p>
+              <p>海伦凯利</p>
+              <p>钢铁是这样炼成的</p>
+              <p>看不见的城市</p>
+            </div>
+          </div>
+          <div class="box-right">
+            <div>
+              <div id="jump33" onclick="jump33()">
+                <img src="../../images/goumai/47.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/47(2).jpg" style="display: none;" alt="">
+                <p>残酷才是青春-苦才是人生-青春版</p>
+                <p>甘肃人民美术出版社</p>
+                <p class="price"><span style="color: #ff6700;">9.99</span>元
+                  <del>25.0元</del></p>
+              </div>
+              <div id="jump34" onclick="jump34()">
+                <img src="../../images/goumai/48.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/48(2).jpg" style="display: none;" alt="">
+                <p>努力就是旺季,不努力就是淡季</p>
+                <p>采铜</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump35" onclick="jump35()">
+                <img src="../../images/goumai/49.jpg"  style="height: 200px;"alt="">
+                <img src="../../images/goumai/49(2).jpg" style="display: none;" alt="">
+                <p>做生意就是做流量-引流进店才是硬道理</p>
+                <p>阿尔贝·加缪(Albert Camus), 冯涛, 刘方</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump36" onclick="jump36()">
+                <img src="../../images/goumai/50.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/50(2).jpg" style="display: none;" alt="">
+                <p>励志小语</p>
+                <p>紫金陈</p>
+                <p class="price"><span style="color: #ff6700;">14.0</span>元
+                  <del>35.0元</del></p>
+              </div>
+            </div>
+            <div>
+              <div id="jump37" onclick="jump37()">
+                <img src="../../images/goumai/51.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/51(2).jpg" style="display: none;" alt="">
+                <p>望女成凤</p>
+                <p>刘慈欣</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+              <div id="jump38" onclick="jump38()">
+                <img src="../../images/goumai/52.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/52(2).jpg" style="display: none;" alt="">
+                <p>励志故事</p>
+                <p>崔倩影</p>
+                <p class="price"><span style="color: #ff6700;">11.4</span>元
+                  <del>44.0元</del></p>
+              </div>
+              <div id="jump39" onclick="jump39()">
+                <img src="../../images/goumai/53.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/53(2).jpg" style="display: none;" alt="">
+                <p>卡耐基励志经典</p>
+                <p>廖敏</p>
+                <p class="price"><span style="color: #ff6700;">12.99</span>元
+                  <del>42.0元</del></p>
+              </div>
+              <div id="jump40" onclick="jump40()">
+                <img src="../../images/goumai/54.jpg" style="height: 200px;" alt="">
+                <img src="../../images/goumai/54(2).jpg" style="display: none;" alt="">
+                <p>意林励志中国</p>
+                <p>意林图书</p>
+                <p class="price"><span style="color: #ff6700;">10.2</span>元
+                  <del>32.0元</del></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container4">
+      <div class="footer">
+        <div class="footer-serve">
+          <div>售后服务</div>
+          <div>7天无理由退货</div>
+          <div>15天免费换货</div>
+          <div>满99包邮</div>
+          <div>3余家售后网点</div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <p>新手指南</p>
+            <p>购物流程</p>
+            <p>会员介绍</p>
+            <p>互动联盟</p>
+            <p>联系我们</p>
+            <p>常见问题</p>
+          </div>
+          <div>
+            <p>付款方式</p>
+            <p>网上支付</p>
+            <p>货到付款</p>
+            <p>银行汇款</p>
+            <p>优惠券支付</p>
+          </div>
+          <div>
+            <p>订单处理配送</p>
+            <p>订单处理配送</p>
+            <p>缺货说明</p>
+            <p>配送费收取标准</p>
+          </div>
+          <div>
+            <p>售后服务</p>
+            <p>退换货政策</p>
+            <p>退换货方法</p>
+            <p>发票说明</p>
+          </div>
+          <div>
+            <p>特色服务</p>
+            <p>购书卡</p>
+            <p>团购服务</p>
+            <p>在线试读</p>
+            <p>视频教程</p>
+          </div>
+          <div>
+            <p>关于我们</p>
+            <p>公司简介</p>
+            <p>联系我们</p>
+          </div>
+          <div class="footer-contact">
+            <p>18855499060</p>
+            <p>周一至周日 8:00-18:00</p>
+            <p>（正常话费标准）</p>
+            <p>人工客服</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

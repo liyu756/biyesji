@@ -1,0 +1,235 @@
+body{
+  margin: 0;
+}
+.loginHead{
+  background-color: #fff;
+  height: 83px;
+  border-bottom: 2px solid #1da65d;
+}
+.logoBar{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  display: flex;
+}
+.logoBar>div{
+  display: flex;
+  width: 100%;
+}
+.logoBar>div:first-child{
+  width: 70%;
+  line-height: 45px;
+  color: #1da65d;
+  font-size: 22px;
+  font-weight: 500;
+}
+.logoBar>div:nth-child(2){
+  color: #1a1a1a;
+  font-size: 12px;
+  padding-left: 49px;
+  margin-right: 33px;
+  line-height: 51px;
+}
+.logoBar>div:nth-child(2)>span{
+  width: 100px;
+}
+.tabs_content{
+  background-color: #f1f7f4;
+}
+.tabs_header{
+  height: 60px;
+}
+.tabs_header>ul{
+  list-style: none;
+  width: 900px;
+  margin:auto;
+  height: 60px;
+}
+
+.tabs_header li{
+  height: 36px;
+  line-height: 36px !important;
+  float: left;
+  width: 20%;
+  /* height: 15px; */
+  line-height: 60px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 40px;
+}
+.li1{
+  background-color: #1da65d;
+  color: #fff;
+}
+.item{
+  display: flex;
+  margin-top: 50px;
+}
+.item>div{
+  width: 360px;
+  height: 412px;
+  padding-top: 50px;
+  padding: 0 15px 0 15x;
+  text-align: center;
+}
+.item>div:first-child{
+  margin-left: 20%;
+}
+.item>div>img{
+  width: 40%;
+}
+.item>div>div{
+  height: 100px;
+  line-height: 24px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #686868;
+  text-align: center;
+}
+.item>div>button{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #1da671;
+}
+.item>div>button>a{
+  text-decoration: none;
+  color: #1da671;
+}
+.tabs_panel2{
+  display: none;
+}
+.tabs_panel3{
+  display: none;
+}
+.tabs_panel4{
+  display: none;
+}
+.tabs_panel5{
+  display: none;
+}
+/* .column-banner{
+  height: 152px;
+  background: url(../../images/juanzeng/6.jpg) center center no-repeat #7ec19d;
+} */
+.crumbs{
+  margin-top: 50px !important;
+  border-bottom: 1px solid #1da671;
+  color: #1da671;
+}
+.tabs_panelItem2>div:nth-child(2),.tabs_panelItem3>div:nth-child(2),.tabs_panelItem4>div:nth-child(2),.tabs_panelItem5>div:nth-child(2){
+  width: 1140px;
+  margin: auto;
+}
+.crumbst3{
+  width: 840px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #fff;
+  height: 400px;
+}
+.crumbs2>ul{
+  display: flex;
+  padding-left: 0;
+}
+.crumbs2>ul>li{
+  height: 57px;
+  /* border: 1px solid ; */
+  padding:15px 20px;
+  list-style: none;
+}
+#tab1,#tab2,#tab3{
+  width: 853px;
+  background-color: #fff;
+  /* height: 500px; */
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+}
+#tab1>h3,#tab2>h3,#tab3>h3{
+  font-size: 24px !important;
+  color: #686868 !important;
+  margin: 0 0 30px 0 !important;
+}
+#tab1 label,#tab2 label,#tab3 label{
+  text-align: right;
+}
+.mailing-info{
+  width: 300px;
+  padding:15px;
+  background-color: #def0df;
+  color: #737373;
+  border-radius: 5px;
+}
+.mailing-info strong{
+  line-height: 24px;
+  font-size: 14px;
+}
+.mailing-info span{
+  line-height: 24px;
+  font-size: 14px;
+}
+#tab1 button,#tab2 button,#tab3 button{
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #fff;
+  color: #39b975;
+  border-radius: 20px;
+  padding: 10px 40px;
+  border: 2px solid #39b975;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3333333;
+  width: 116px;
+  height: 44px;
+}
+.donation-form-notes{
+  margin-top: 20px;
+  color: #dc5c5c;
+}
+.board-info{
+  width: 1120px;
+  padding:10px;
+  margin: auto;
+  background-color: #3cbc78;
+  border-radius: 10px;
+  margin-top: 40px;
+  height: 1000px;
+  overflow-y:scroll
+}
+.board-info>h3{
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+table{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+table th{
+  padding: 8px;
+  line-height: 1.42857143;
+  color: #686868;
+  font-size: 14px;
+  border-bottom: 2px solid #ddd;
+}
+table td{
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  color: #686868;
+  font-size: 14px;
+}
+.editor{
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+  font-size: 16px;
+}

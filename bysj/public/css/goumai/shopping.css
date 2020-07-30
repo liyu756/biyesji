@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+}
+.loginHead{
+  background-color: #fff;
+  height: 83px;
+  border-bottom: 2px solid #ff6700;
+}
+.logoBar{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  display: flex;
+}
+.logoBar>div{
+  display: flex;
+}
+.logoBar>div:first-child{
+  width: 70%;
+  line-height: 45px;
+  color: #ff6700;
+  font-size: 22px;
+  font-weight: 500;
+}
+.logoBar>div:nth-child(2){
+  color: #1a1a1a;
+  font-size: 12px;
+  padding-left: 49px;
+  margin-right: 33px;
+  line-height: 51px;
+}
+.logoBar>div:nth-child(2)>span{
+  text-align: right;
+  width: 300px;
+}
+.page-main{
+  padding-top: 38px;
+  padding-bottom: 38px;
+  background: #f5f5f5;
+}
+.cart-empty{
+  margin-top: 65px;
+  margin-bottom: 130px;
+  background: url(../../images/goumai/cart-empty.png) no-repeat 124px 0;
+  height: 273px;
+}
+.cart-empty>h2{
+  padding-top: 100px;
+  margin-left: 600px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+.cart-empty>a{
+  width: 170px;
+  height: 48px;
+  line-height: 48px;
+  display: block;
+  background-color: #f25807;
+  border-color: #f25807;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 600px;
+  border-radius: 6px;
+}

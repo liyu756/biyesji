@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/goumai/detail.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/goumai/detail.js"></script>
+</head>
+<body>
+  <div>
+    <div class="site-topbar">
+      <a href="../goumai/shopping.html">
+        <span class="glyphicon glyphicon glyphicon-shopping-cart"></span>
+        购物车</a>
+    </div>
+    <div class="content">
+      <div class="left">
+        <!-- <img id="img" style="width: 100%;" src="../../images/goumai/16.1.jpg" /> -->
+        <img src="../../images/goumai/16.1.jpg"  alt="">
+      </div>
+      <div class="right">
+        <p>《孔子智慧101》</p>
+        <p>商务印书馆出品</p>
+        <p class="price"><span style="color: #ff6700;">24</span>元
+          <del style="color: #aaa;">72元</del></p>
+        <div class="J_buyBtnBox">
+          <button>加入购物车</button>
+          <button>喜欢</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    console.log(window.location.href);//先瞅一下这个是啥，可不就是刚刚打开页面的时候传的地址么
+    var str = window.location.href;
+    let list =  str.split('?');//用刚刚传递地址里面的“？”把传过来的东西劈开
+    //console.log(list);//这就成一个数组了
+    var a = decodeURI(list[1]);//传过来的中文结果都是%跟十六进制数字，那就得用decodeURI转一下
+    var b = decodeURI(list[2]);
+    var c = decodeURI(list[3]);
+    var d = decodeURI(list[4]);
+    var e = decodeURI(list[5]);
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    $("img").attr("src",a)
+    $(".right:p:first")
+  </script>
+</body>
+</html>

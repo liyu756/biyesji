@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+}
+.loginHead{
+  background-color: #fff;
+  height: 83px;
+  border-bottom: 2px solid #ff6700;
+}
+.logoBar{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  display: flex;
+}
+.logoBar>div{
+  display: flex;
+}
+.logoBar>div:first-child{
+  width: 70%;
+  line-height: 45px;
+  color: #ff6700;
+  font-size: 22px;
+  font-weight: 500;
+}
+.logoBar>div:nth-child(2){
+  color: #1a1a1a;
+  font-size: 12px;
+  padding-left: 49px;
+  margin-right: 33px;
+  line-height: 51px;
+}
+.logoBar>div:nth-child(2)>span{
+  width: 100px;
+}
+.content{
+  background-color: #f6f4f5;
+  height: 500px;
+  padding-top: 20px;
+}
+.loginForm{
+  padding-top: 60px;
+  background-color: #fff;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 400px;
+}
+.signForm{
+  padding-top: 60px;
+  background-color: #fff;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 560px;
+}
+.signForm b{
+  color: #333;
+  height: 24px;
+  font-size: 22px;
+  padding-left: 13px;
+  border-left: 3px solid #ff6700;
+  font-weight: bold;
+}
+.loginForm b{
+  color: #333;
+  height: 24px;
+  font-size: 22px;
+  padding-left: 13px;
+  border-left: 3px solid #ff6700;
+  font-weight: bold;
+}
+.loginTitle{
+  line-height: 24px;
+  width: 212px;
+  height: 24px;
+  margin-left: 100px;
+}
+.labInpWr{
+  display: flex;
+  margin-top: 40px;
+}
+.label{
+  width: 25%;
+  text-align: right;
+  font-size: 16px;
+  color: #333;
+  line-height: 42px;
+}
+.inputPad{
+  width: 340px;
+  height: 42px;
+}
+.inputPad>input{
+  width: 303px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.loginBtn{
+  width: 380px;
+  height: 50px;
+  background-color: #ff6700;
+  text-align: center;
+  color: #f6f4f5;
+  line-height: 50px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 6px;
+}
+.otherLink{
+  width: 380px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+}
+.otherLink>a{
+  color: #666a6b;
+  font-size: 14px;
+  display: block;
+  width: 50%;
+}
+.newUserReg{
+  text-align: right;
+}
